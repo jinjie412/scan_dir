@@ -6,6 +6,7 @@
 
 python scan_dir.py  -d /home/dics/2.dir.txt,/home/dics/3.txt -o iii.txt -s 6 -u http://www.yiguo.com
 
+pip install requests
 
 py版本御剑扫描器    win下正常  ubuntu下略卡(虚拟机...)  速度较快(threading模块+Queue守护线程数据) 较稳定
 

@@ -21,7 +21,7 @@ class Doscan(threading.Thread):
 
     def getStatus(self, url):
         try:
-            r = requests.get(url, headers=get_header(), timeout=5)
+            r = requests.get(url, headers=get_header(), timeout=5,allow_redirects=False)
             return int(r.status_code)
         except:
             print 'error open url'
