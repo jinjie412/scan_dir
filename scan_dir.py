@@ -2,12 +2,12 @@
 @author: xiaoye
 '''
 #coding: utf-8
-import requests
+import Queue
 import sys
 import threading
-#import time
-import Queue
 from optparse import OptionParser
+
+import requests
 
 '''reload(sys)
 sys.setdefaultencoding('utf8')'''
@@ -57,8 +57,8 @@ if __name__ == '__main__':
     (option, args) = parse.parse_args()
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
     url = option.input_url
+    print (option, args)
     print url
     main()
 
-#             zhiyan
 
